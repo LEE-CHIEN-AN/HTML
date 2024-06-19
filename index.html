@@ -38,10 +38,53 @@
         <!--在網頁中插入圖片-->
         <!-- src 表示屬性-->
         <!--從外部網址-->
-        <img src = "https://tw.portal-pokemon.com/play/resources/pokedex/img/pm/5f27124544444c7565d9dc54c3227f3970aa7454.png" height = "300" >
+        <img src = "https://tw.portal-pokemon.com/play/resources/pokedex/img/pm/5f27124544444c7565d9dc54c3227f3970aa7454.png" width = "300" >
         <!--從自己的資料夾 順便調整這張圖要呈現的大小-->
         <img src = "me.jpg" width="400" height="400" > <!-- width height 是屬性 圖片被壓縮了-->
         <img src = "me.jpg" width = "300"> <!--根據width 去等比例縮小-->
+
+        <!--在網頁中插入影片 or youtube 影片-->
+        <!-- controls 顯示出可控制影片播放的按鈕-->
+        <video src = "草東大港.mp4" controls height="600">當影片載入失敗會出現的東西</video>
+        <!--yt影片: 分享=>嵌入=>複製貼上 -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HQaDd_nEb0I?si=_w1cWClQqLopa7_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <!--列表-->
+        <!--ul是無序列表 ol是有序列表-->
+        <ul>
+            <li>第一個項目</li>
+            <li>第二個項目</li>
+            <li>第三個項目</li>
+        </ul>
+        <ol><!-- ol是有序列表 預設用數字排列 -->
+            <li>第一個項目</li>
+            <li>第二個項目</li>
+            <li>第三個項目</li>
+        </ol>
+        <ol type="I"> <!-- type是屬性 可以改成大寫羅馬數字 -->
+            <li>第一個項目</li>
+            <li>第二個項目</li>
+            <li>第三個項目</li>
+        </ol>
+
+        <!--表格-->
+        <table width = "400"><!-- table 創立-->
+            <tr><!-- tr是table row 表示一行-->
+                <td>國</td> <!-- td是table data 表示一格-->
+                <td>數</td>
+                <td>英</td>
+            </tr>
+            <tr>
+                <td>60</td>
+                <td>60</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>70</td>
+                <td>70</td>
+                <td>70</td>
+            </tr>
+        </table>
     </body>
     
 </html>
