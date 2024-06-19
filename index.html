@@ -45,48 +45,61 @@
 
         <!--在網頁中插入影片 or youtube 影片-->
         <!-- controls 顯示出可控制影片播放的按鈕-->
-        <video src = "5秒.mp4" controls height="400">當影片載入失敗會出現的東西</video>
+        <video src = "5秒.mp4" controls width="400">當影片載入失敗會出現的東西</video>
         <!--yt影片: 分享=>嵌入=>複製貼上 -->
         <iframe width="560" height="315" src="https://www.youtube.com/embed/HQaDd_nEb0I?si=_w1cWClQqLopa7_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-        <!--列表-->
-        <!--ul是無序列表 ol是有序列表-->
-        <ul>
-            <li>第一個項目</li>
-            <li>第二個項目</li>
-            <li>第三個項目</li>
-        </ul>
-        <ol><!-- ol是有序列表 預設用數字排列 -->
-            <li>第一個項目</li>
-            <li>第二個項目</li>
-            <li>第三個項目</li>
-        </ol>
-        <ol type="I"> <!-- type是屬性 可以改成大寫羅馬數字 -->
-            <li>第一個項目</li>
-            <li>第二個項目</li>
-            <li>第三個項目</li>
-        </ol>
+        <!--html的容器 div、span-->
+        <!--div是容器 可以放很多東西 但是不會有特別的效果 但用了在之後CSS美化和排版時會好用很多-->
+        <div> <!-- style是屬性 可以改變字的顏色 css語法-->
+            <!--列表-->
+            <!--ul是無序列表 ol是有序列表-->
+            <ul>
+                <li>第一個項目</li>
+                <li>第二個項目</li>
+                <li>第三個項目</li>
+            </ul>
+            <ol><!-- ol是有序列表 預設用數字排列 -->
+                <li>第一個項目</li>
+                <li>第二個項目</li>
+                <li>第三個項目</li>
+            </ol>
+            <ol type="I"> <!-- type是屬性 可以改成大寫羅馬數字 -->
+                <li>第一個項目</li>
+                <li>第二個項目</li>
+                <li>第三個項目</li>
+            </ol>
 
-        <!--表格-->
-        <table width = "400"><!-- table 創立-->
-            <tr><!-- tr是table row 表示一行-->
+            <!--表格-->
+            <table width = "400"><!-- table 創立-->
+                <tr><!-- tr是table row 表示一行-->
                 <td>國</td> <!-- td是table data 表示一格-->
                 <td>數</td>
                 <td>英</td>
-            </tr>
-            <tr>
-                <td>60</td>
-                <td>60</td>
-                <td>60</td>
-            </tr>
-            <tr>
-                <td>70</td>
-                <td>70</td>
-                <td>70</td>
-            </tr>
-        </table>
+                </tr>
+                <tr>
+                    <td>60</td>
+                    <td>60</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td>70</td>
+                    <td>70</td>
+                    <td>70</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
 
-        <!--html的容器 div、span-->
+        <a href="#">link1</a> <!--只佔 本身所需的空間-->
+        <a href="#">link2</a>
+        <p>你好 </p> <!--佔一整行-->
+        <p>哈哈</p>
+        <!--span 和 div的差別-->
+        <span>span1</span> <!--span 只佔 本身所需的空間-->
+        <span>span2</span>
+        <div>div1</div> <!--div 佔一整行-->
+        <div>div2</div>
     </body>
     
 </html>
