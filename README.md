@@ -1,1 +1,2 @@
-# 一升二暑假 目標: 網頁前後端基礎自學
+學習筆記記錄
+https://hackmd.io/@RuH9UULLRMuRo2iEsweIqA/Bk7b0tAHC
