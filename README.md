@@ -1,5 +1,7 @@
 # 李倢安的冒險年表 | Joan's Timeline
 
+https://lee-chien-an.github.io/personal-website/
+
 一個純前端個人網站，展示李倢安（Joan Lee）的人生旅程、興趣愛好與專業經歷。網站採用現代化的設計風格，結合時間軸展示與互動式內容。
 
 ## 🌟 專案特色
