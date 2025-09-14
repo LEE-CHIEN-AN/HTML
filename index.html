@@ -1,134 +1,172 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <!-- 下面那行表達的是網頁的編碼 charset也是屬性 代表編碼-->
-        <!--meta標籤 告訴瀏覽器這個網頁的資訊-->
-        <meta charset="UTF-8"></meta>
-        <meta name = "despcription" content="李倢html學習紀錄"></meta><!--despcript 搜尋結果網頁的下方都會有一段描述-->
-        <meta name = "author" content="李倢"></meta><!--author 作者-->
-        <meta name = "keywords" content="html learning"></meta><!--keywords 關鍵字-->
-        <meta name = "viewport" content="width=device-width, initial-scale=1.0"></meta><!--viewport視口 用來設定網頁在不同裝置上的顯示方式--><!--width=device-width根據裝置大小調整-->
-        <title>李倢的網頁</title>
-    </head>
-    <body>
-        <!-- 這是一個註解 -->
-        hello 我是李倢
-        <!-- h1-h6 都是標題 由大到小 -->
-        <h3>我是一個標題</h3>
-        <!-- p是段落 -->
-        <p>我是一個段落</p>
-
-        <br> <!-- br是換行 -->
-        <hr> <!-- hr是水平線 -->
-
-        <h3> 第二個標題 </h3>
-        <!-- b是粗體 i是斜體 -->
-        <p><i>斜體i</i><b>粗體b</b></p>
-
-        <!--連結與圖片-->
-        <!--a標籤需要屬性 => href 代表網址的屬性 -->
-        <a href="https://www.google.com">google</a>
-    
-        <!-- 連結到自己的另外一個網頁-->
-        <a href ="page2.html">第二頁</a>
-        <!-- 連結到自己的不在同一個資料夾下的網頁-->
-        <a href ="dir/page3.html">第三頁</a>
-        <!--要注意page3連結回來的方式-->
-        
-        <!--連結到圖片or pdf檔是一樣的方式-->
-        <a href = "me.jpg">我</a>
-        <a href="第十五週作業_資管一 b12705041 李倢安.pdf">pdf</a>
-        
-
-        <!--在網頁中插入圖片-->
-        <!-- src 表示屬性-->
-        <!--從外部網址-->
-        <img src = "https://tw.portal-pokemon.com/play/resources/pokedex/img/pm/5f27124544444c7565d9dc54c3227f3970aa7454.png" width = "300" >
-        <!--從自己的資料夾 順便調整這張圖要呈現的大小-->
-        <img src = "me.jpg" width="400" height="400" > <!-- width height 是屬性 圖片被壓縮了-->
-        <img src = "me.jpg" width = "300"> <!--根據width 去等比例縮小-->
-
-        <!--在網頁中插入影片 or youtube 影片-->
-        <!-- controls 顯示出可控制影片播放的按鈕-->
-        <video src = "5秒.mp4" controls width="400">當影片載入失敗會出現的東西</video>
-        <!--yt影片: 分享=>嵌入=>複製貼上 -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/HQaDd_nEb0I?si=_w1cWClQqLopa7_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-        <!--html的容器 div、span-->
-        <!--div是容器 可以放很多東西 但是不會有特別的效果 但用了在之後CSS美化和排版時會好用很多-->
-        <div style = "color:red;"> <!-- style是屬性 可以改變字的顏色 css語法-->
-            <!--列表-->
-            <!--ul是無序列表 ol是有序列表-->
-            <ul>
-                <li>第一個項目</li>
-                <li>第二個項目</li>
-                <li>第三個項目</li>
-            </ul>
-            <ol><!-- ol是有序列表 預設用數字排列 -->
-                <li>第一個項目</li>
-                <li>第二個項目</li>
-                <li>第三個項目</li>
-            </ol>
-            <ol type="I"> <!-- type是屬性 可以改成大寫羅馬數字 -->
-                <li>第一個項目</li>
-                <li>第二個項目</li>
-                <li>第三個項目</li>
-            </ol>
-
-            <!--表格-->
-            <table width = "400"><!-- table 創立-->
-                <tr><!-- tr是table row 表示一行-->
-                <td>國</td> <!-- td是table data 表示一格-->
-                <td>數</td>
-                <td>英</td>
-                </tr>
-                <tr>
-                    <td>60</td>
-                    <td>60</td>
-                    <td>60</td>
-                </tr>
-                <tr>
-                    <td>70</td>
-                    <td>70</td>
-                    <td>70</td>
-                </tr>
-            </table>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joan's Website</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">Joan Lee</div>
+            <nav class="nav">
+                <a href="index.html" class="nav-item">
+                    <span class="nav-icon"></span>
+                    Home 
+                </a>
+                <a href="about.html" class="nav-item">
+                    <span class="nav-icon"></span>
+                    About Me 
+                </a>
+                <a href="timeline.html" class="nav-item">
+                    <span class="nav-icon"></span>
+                    Timeline 
+                </a>
+                <a href="contact.html" class="nav-item">
+                    <span class="nav-icon"></span>
+                    Contact 
+                </a>
+            </nav>
         </div>
-        <hr>
+    </header>
 
-        <a href="#">link1</a> <!--只佔 本身所需的空間-->
-        <a href="#">link2</a>
-        <p>你好 </p> <!--佔一整行-->
-        <p>哈哈</p>
-        <!--span 和 div的差別-->
-        <span>span1</span> <!--span 只佔 本身所需的空間-->
-        <span>span2</span>
-        <div>div1</div> <!--div 佔一整行-->
-        <div>div2</div>
+    <main class="main-content">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-left">
+                <p style="font-size:1.2rem; color:#24392e; margin-bottom:.5rem;">👋 嗨！</p>
+                <h1>我是<span class="highlight">李倢安</span></h1>
+            
+                <div class="chips">
+                    <span class="chip">ISTP</span>
+                    <span class="chip">EMO仔</span>
+                    <span class="chip">綠豆加薏仁</span>
+                    <span class="chip">咖哩飯要拌</span>
+                    <span class="chip">豆漿豆花信徒</span>
+                    <span class="chip">愛香菜</span>
+                    <span class="chip">假聽團仔</span>
+                    <span class="chip">🏸📸💻🛹🛵</span>
+                    <span class="chip">🥾☕️</span>
+                </div>
+            </div>
+            <div class="hero-right">
+                <img src="assets/img/photo_me.jpg" alt="李倢安 生活照">
+            </div>
+        </section>
 
-        <!--html輸入標籤-->
-        <input type = "text" placeholder = "請輸入帳號"> <!--placeholder是輸入提示--><!--input不用關閉標籤-->
-        <br><!--換行-->
-        <br>
-        <input type = "password" placeholder="請輸入密碼"><!--把密碼遮擋起來變成米字號或點點-->
-        <br><!--換行-->
-        <br>
-        <input type = "date"><!--日期-->
-        <br><!--換行-->
-        <br>
-        <input type = "color"><!--顏色-->
-        <br><!--換行-->
-        <br>
-        <input type = "range"><!--範圍-->
-        <br>
-        <br>
-        <input type = "file"><!--檔案-->
-        <br>
-        <br>
-        <input type = "checkbox"><!--勾選-->
-        <br>
-        <br>
-        <textarea>你好</textarea><!--多行輸入 在網頁上可自行拉大輸入框--><!--可以預設內容在欄位裡面-->
-    </body>
-    
-</html>
+        <!-- 興趣 Section -->
+        <section class="interests-section">
+            <h2 class="section-title">我的興趣</h2>
+            
+            <!-- KPOP 追星仔 -->
+            <div class="interest-card">
+                <h3>🎵 KPOP 追星仔</h3>
+                <div class="photo-gallery">
+                    <div class="photo-item">
+                        <img src="assets/img/kpop1.jpg" alt="KPOP 照片 1" onerror="this.style.display='none'">
+                    </div>
+                    <div class="video-container">
+                        <video controls class="skateboard-video">
+                            <source src="assets/video/kpop2.mp4" type="video/mp4">
+                            您的瀏覽器不支援影片播放。
+                        </video>
+                    </div>
+                    <div class="photo-item">
+                        <img src="assets/img/kpop3.jpg" alt="KPOP 照片 3" onerror="this.style.display='none'">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 聽團 -->
+            <div class="interest-card">
+                <h3>🎸 聽團</h3>
+                <div class="music-content">
+                    <div class="artists-list">
+                        <h4>喜歡的樂團/歌手：</h4>
+                        <p>草東、康士坦的變化球、伍佰、盧廣仲、JADE、hue、VH、山姆、陳嫻靜、Gummy B、南西肯恩、桑尼...</p>
+                    </div>
+                    <div class="festivals">
+                        <h4>去過的音樂祭：</h4>
+                        <p>大港開唱、Jam Jam Asia、諸羅搖滾、秋OUT</p>
+                    </div>
+                    <div class="music-embeds">
+                        <h4>愛歌分享：</h4>
+                        <div class="music-grid">
+                            <iframe src="https://open.spotify.com/embed/track/7iNnvOWQSTQPLn5WPu0gdU?utm_source=generator" width="400" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                            <iframe src="https://open.spotify.com/embed/track/3sHfuqSaGCN4FFoTc2xaaX?utm_source=generator" width="400" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                            <iframe src="https://open.spotify.com/embed/track/2nZUFQv6fEvyvkVwndttNi?utm_source=generator" width="400" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                            <iframe src="https://open.spotify.com/embed/track/1h1odoIBoxI1BvZUpoAGcH?utm_source=generator" width="400" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 滑板初學者 -->
+            <div class="interest-card">
+                <h3>🛹 滑板初學者</h3>
+                <div class="photo-gallery">
+                    <div class="video-container">
+                        <video controls class="skateboard-video">
+                            <source src="assets/video/skate1.mp4" type="video/mp4">
+                            您的瀏覽器不支援影片播放。
+                        </video>
+                    </div>
+                    <div class="video-container">
+                        <video controls class="skateboard-video">
+                            <source src="assets/video/skate2.mp4" type="video/mp4">
+                            您的瀏覽器不支援影片播放。
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 攝影初學者 -->
+            <div class="interest-card">
+                <h3>📸 攝影初學者</h3>
+                <div class="photo-gallery">
+                    <div class="photo-item">
+                        <img src="assets/img/camera1.jpg" alt="相機照片 1" onerror="this.style.display='none'">
+                    </div>
+                    <div class="photo-item">
+                        <img src="assets/img/camera2.jpg" alt="相機照片 2" onerror="this.style.display='none'">
+                    </div>
+                    <div class="photo-item">
+                        <img src="assets/img/camera3.jpg" alt="相機照片 3" onerror="this.style.display='none'">
+                    </div>
+                </div>
+                <div class="ig-posts">
+                    <div class="ig-post">
+                        <iframe src="https://www.instagram.com/p/C5v39-vy-3M/embed" width="400" height="500" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                    <div class="ig-post">
+                        <iframe src="https://www.instagram.com/p/C5v5EdMSIDo/embed" width="400" height="500" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vlog 剪輯 -->
+            <div class="interest-card">
+                <h3>🎬 有興致時會剪vlog紀錄生活</h3>
+                <div class="youtube-grid">
+                    <iframe width="450" height="300" src="https://www.youtube.com/embed/InS_acGnYLY?si=xvzIMAJTlxOQX-kH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="450" height="300" src="https://www.youtube.com/embed/75DMTnwRcFI?si=XXHoqS24UN_QWuf3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- 喜歡看展 -->
+            <div class="interest-card">
+                <h3>🎨 喜歡看展</h3>
+                <div class="youtube-grid">
+                    <iframe width="450" height="300" src="https://www.youtube.com/embed/gw5202Cg5IU?si=pdaxslFPCnw95Bty" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="ig-post">
+                        <iframe src="https://www.instagram.com/p/C1ZuFeRSW68/embed" width="400" height="500" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+    </main>
+</body>
